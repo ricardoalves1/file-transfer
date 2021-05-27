@@ -14,7 +14,7 @@ stop = False
 print('Conectado')
 
 def update_screen():
-    os.system('cls') or None
+    os.system('cls' if os.name == 'nt' else 'clear') or None
 
     show_clients()
     get_commands()
@@ -133,7 +133,7 @@ def clients_list():
 
             if 'clients' in response:
                 clients = response['clients']
-                os.system('cls') or None
+                os.system('cls' if os.name == 'nt' else 'clear') or None
                 show_clients()
                 show_commands()
                 
