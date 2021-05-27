@@ -16,7 +16,7 @@ O Cliente pode:
 # Dependências
 
 ## Python
-Version 3.5 a 3.7 (3.8 is incompatible with Kivy 1.11.0)
+Versão usada: 3.9
 
 # Executando a aplicação
 Utilizar Python3.
